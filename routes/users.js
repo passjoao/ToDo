@@ -6,11 +6,11 @@ var router = express.Router();
 *	@query param
 */
 router.get('/register', function(req, res, next) {
-	res.send('respond with a resource');
+	res.end();
 });
 
 router.get('/autenticar', function(req, res, next) {
-	res.send('respond with a resource');
+	res.end();
 });
 
 
@@ -19,19 +19,19 @@ router.get('/autenticar', function(req, res, next) {
 *	@query param
 */
 router.get('/create', function(req, res, next) {
-	res.send('respond with a resource');
+	res.end();
 });
 
 router.get('/update', function(req, res, next) {
-	res.send('respond with a resource');
+	res.end();
 });
 
 router.get('/remove', function(req, res, next) {
-	res.send('respond with a resource');
+	res.end();
 });
 
 router.get('/list', function(req, res, next) {
-	res.send('respond with a resource');
+	res.end();
 });
 
 module.exports = router;
