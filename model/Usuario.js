@@ -8,6 +8,7 @@ class Usuario{
 
 	autenticar(login, callback){
 		var user = db.get.usuario(login.email);
+		console.log(user)
 		if(user.senha === login.senha){
 			callback(true);
 		}

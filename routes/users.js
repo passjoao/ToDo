@@ -25,6 +25,7 @@ router.get('/autenticar', function(req, res, next) {
 	}
 
 	usuario.autenticar(login, function(status){
+		res.send(status);
 		res.end();
 	});
 });
