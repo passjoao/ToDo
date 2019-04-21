@@ -1,25 +1,32 @@
 var express = require('express');
 var router = express.Router();
-var usuario = require('../model/Usuario');
+var usuario = require('../model/Usuario.js');
 
 /*
 *	todo user routers
 *	@query param
 */
 router.get('/register', function(req, res, next) {
-	var usuario = {
-		nome: req.param.nome,
-		email: req.param.email, 
-		senha: req.param.senha
+	let register = {
+		nome: req.query.nome,
+		email: req.query.email, 
+		senha: req.query.senha
 	}
 
-	usuario.register(usuario, function(){
-		console.log('registrado')
+	usuario.register(register, function(){
+		res.end();
 	});
 });
 
 router.get('/autenticar', function(req, res, next) {
-	res.end();
+	let login = {
+		email: req.query.email,
+		senha: req.query.senha
+	}
+
+	usuario.autenticar(login, function(status){
+		res.end();
+	});
 });
 
 

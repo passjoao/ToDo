@@ -7,4 +7,4 @@ class Usuario{
 	}
 }
 
-module.exports = Usuario;
+module.exports = new Usuario;

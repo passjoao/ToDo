@@ -1,0 +1,35 @@
+{
+  "task": [],
+  "usuario": [
+    {
+      "id": "i0o0PzzxG",
+      "nome": "pedro",
+      "email": "lucas",
+      "senha": "senha123"
+    },
+    {
+      "id": "-1z2SEERa",
+      "nome": "lucas",
+      "email": "pedro@hotmail.com",
+      "senha": "senha123"
+    },
+    {
+      "id": "7tSO28UeU",
+      "nome": "pedro",
+      "email": "lucas",
+      "senha": "senha123"
+    },
+    {
+      "id": "2HFHizJdA",
+      "nome": "joao",
+      "email": "lucas",
+      "senha": "senha123"
+    },
+    {
+      "id": "piepG1I6o",
+      "nome": "joao",
+      "email": "lucas",
+      "senha": "senha do malandro"
+    }
+  ]
+}
