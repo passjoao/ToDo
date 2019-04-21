@@ -23,9 +23,10 @@ module.exports.insert.usuario = function(nome, email, senha){
 	}).write();
 };
 
-module.exports.insert.task = function(title){
+module.exports.insert.task = function(conteudo, date){
 	db.get('task').push({
 		id: shortid.generate(),
-		title: title
+		conteudo: conteudo,
+		date: date
 	}).write();
 };

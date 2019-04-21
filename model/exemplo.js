@@ -1,4 +1,5 @@
 var db = require('../model/db');
+
 db.insert.usuario('nome', 'email@email.com', 'senha123');
 db.insert.task('ir no mercado comprar pao');
 
