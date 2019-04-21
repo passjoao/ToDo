@@ -6,6 +6,7 @@ const db = low(adapter);
 module.exports.insert = {};
 module.exports.update = {};
 module.exports.delete = {};
+module.exports.get = {};
 
 // db schema
 db.defaults({
@@ -14,6 +15,11 @@ db.defaults({
 }).write();
 
 
+module.exports.get.usuario = function(email){
+	return db.get('usuario')
+	.find({email: email})
+	.value();
+}
 module.exports.insert.usuario = function(nome, email, senha){
 	db.get('usuario').push({
 		id: shortid.generate(),
